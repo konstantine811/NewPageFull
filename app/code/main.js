@@ -6,14 +6,36 @@
 */
 
 'use strict';
-
 $(document).ready(function() {
-	$('#fullpage').fullpage({
-		sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-		anchors: ['firstPage', 'secondPage', 'thirdPage'],
-		menu: '#menu',
-		scrollOverflow: true,
-		navigation: true,
-		afterLoad: function(link)
+
+
+	$("#submit-button-form-search").on('click', function() {
+			$.each($('input.validate'), function(key, value) {
+				var val = $(this).val();
+				if (val == '') {
+					$(this).siblings('.form-label').css("color", "red");
+					
+				} else {
+					$(this).siblings('.form-label').css("color", "black");
+				}
+			})
 	});
+
+	$('#button-sort-by').on('click', function() {
+		var w_popup = $('#sort-popup');
+		var h = w_popup.height();
+		console.log(h);
+		if (h === 0) {
+            w_popup.animate({
+                "height": "134px"
+            },);
+		} else {
+            w_popup.animate({
+                "height": "0"
+            });
+		}
+
+
+	});
+
 });

@@ -6,7 +6,7 @@
     "konstantine811 <galystyan777@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/konstantine811/NewPageFull",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,6 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "jquery-slimscroll": "slimScroll#^1.3.8"
-  }
+  },
+  "devDependencies": {
+  },
+  "private": true
 }

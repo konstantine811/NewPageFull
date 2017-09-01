@@ -1,52 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AwareNow</title>
+    <title>Upstream</title>
     <link href="style/media.css" rel="stylesheet">
-    <link href="libs/fullpage.js/dist/jquery.fullpage.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="libs/materialize/dist/css/materialize.min.css" />
     <link href="style/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/media.css" />
   </head>
   <body>
-    <ul id="menu">
-      <li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
-      <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-      <li data-menuanchor="thirdPage"><a href="#thirdPage">third slide</a></li>
-    </ul>
-    <div id="fullpage">
-      <div id="section1" class="section">
-        <div class="intro">
-          <h1>Первая страница</h1>
-        </div>
-        <div class="slide">
-          <h1>Cлайд 1</h1>
-        </div>
-        <div class="slide">
-          <h1>Слайд 2</h1>
-        </div>
-        <div class="slide">
-          <h1>Слайд 3</h1>
-        </div>
-      </div>
-      <div id="section2" class="section">
-        <div class="intro">
-          <h1>Вторая страница</h1>
-        </div>
-      </div>
-      <div id="section3" class="section">
-        <div class="intro"><img src="img/user-4.png">
-          <h1>Третья страница</h1>
-          <p>Hello</p>
+    <section>
+      <header class="head-upstream">
+        <div class="container">
+        <div class="row head-upstream__inner">
+            <div class="col-table-3  col-4 col-sm-4 col-exs-2">
+              <div class="head-text head-text--border">
+               <h2 class="head-text__inner text-bold">Upstream</h2>
+             </div>
+           </div>
+           <div class="col-table-3 col-8 col-sm-4 col-exs-2">
+            <div class="head-search">
+              <p class="head-search__text text-bold">3 matching components found</p>
+              <div class="head-search__wrap-button">
+                <button class="head-serach__button waves-effect waves-light btn  red lighten-1" id="button-sort-by"><span class="grey-text text-lighten-5">Sort by: Best match</span></button>
+                <div class="head-search__popup" id="sort-popup">
+                  <div class="description-nav description-nav--popup">
+                    <ul class="description-nav__inner">
+                      <li class="description-nav__item on_active"><button class="description-nav__link" href="">Summary</button></li>
+                      <li class="description-nav__item "><button class="description-nav__link" href="">Release history</button></li>
+                      <li class="description-nav__item"><button class="description-nav__link"  href="">Dependencies</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
+    <section class="form">
+      <div class="container">
+        <div class="row">
+          <div class="col-table-6 col-4 col-sm-4 col-exs-2">
+            <div class="form-section">
+              <form action="" class="form__inner">
+              <div class="form-txt">
+                <h3 class="form-text__inner text-bold">Search Criteria</h3>
+              </div>
+              <div class="form-input">
+                <div class="form-input__inner">
+                  <label for="component_name" class="form-label">Component Name</label>
+                <input id="component_name" type="text" class="validate form-input-text">
+                </div>
+                <div class="form-input__inner">
+                  <label for="component_name" class="form-label">Component Name</label>
+                <input id="component_name" type="text" class="validate form-input-text">
+                </div>
+                <div class="form-input__inner">
+                  <label for="component_name" class="form-label">Component Name</label>
+                <input id="component_name" type="text" class="validate form-input-text">
+                </div>
+                <div class="form-input__inner">
+                  <label for="component_name" class="form-label">Component Name</label>
+                <input id="component_name" type="text" class="validate form-input-text">
+                </div>
+              </div>
+            </form>
+            <div class="form-button">
+              <button id="submit-button-form-search" class="waves-effect waves-light btn red btn--padding" type="submit" value="Search">Search</button>
+            </div>
+          </div>
+            </div>
+          <div class="col-table-6 col-8 col-sm-4 col-exs-2">
+            <div class="table-section">
+              <table class="table table--width">
+                <tbody class="table__inner">
+                  <tr>
+                    <td class="table__head">
+                      <div class="table__head-text">
+                        <h4 class="table-text">angular/angular</h4>
+                        <p>One framework. Mobile & desktop.</p>
+                      </div>
+                    </td>
+                    <td class="table__row-2">
+                      <div class="table__row2-text">
+                        <p>TypeScript</p>
+                        <p>198k lines</p>
+                      </div>
+                    </td>
+                    <td class="table__row-3">
+                      <div class="table__row-text">
+                        <p>Interest: High</p>
+                        <p>Activity: Moderate</p>
+                      </div>
+                    </td>
+                    <td class="table__row-4">
+                      <div class="table__row-text">
+                        <p>Version: 5.0.0-beta.4</p>
+                        <p>License: MIT</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__head">
+                      <div class="table__head-text">
+                        <h4 class="table-text">facebook/react</h4>
+                        <p>A declarative, efficient, and flexible JavaScript library for building user interfaces.</p>
+                      </div>
+                    </td>
+                    <td class="table__row-2">
+                      <div class="table__row2-text">
+                        <p>Javacript</p>
+                        <p>76k lines</p>
+                      </div>
+                    </td>
+                    <td class="table__row-3">
+                      <div class="table__row-text">
+                        <p>Interest: High</p>
+                        <p>Activity: High</p>
+                      </div>
+                    </td>
+                    <td class="table__row-4">
+                      <div class="table__row-text">
+                        <p>Version: 15.6.1</p>
+                        <p>License: Bsd-3-Clause</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__head">
+                      <div class="table__head-text">
+                        <h4 class="table-text">vuejs/vue</h4>
+                        <p>A progressive, incrementally-adoptable JavaScript framework for building UI on the web</p>
+                      </div>
+                    </td>
+                    <td class="table__row-2">
+                      <div class="table__row2-text">
+                        <p>JavaScript</p>
+                        <p>45k lines</p>
+                      </div>
+                    </td>
+                    <td class="table__row-3">
+                      <div class="table__row-text">
+                        <p>Interest: High</p>
+                        <p>Activity: High</p>
+                      </div>
+                    </td>
+                    <td class="table__row-4">
+                      <div class="table__row-text">
+                        <p>Version: 2.4.2</p>
+                        <p>License: MIT</p>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
   </body>
   <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="libs/fullpage.js/vendors/scrolloverflow.min.js"></script>
-  <script type="text/javascript" src="libs/fullpage.js/dist/jquery.fullpage.min.js"></script>
-  <script type="text/javascript" src="libs/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <script type="text/javascript" src="libs/materialize/dist/js/materialize.min.js" /></script>
   <script type="text/javascript" src="code/main.js"></script>
 </html>

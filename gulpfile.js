@@ -26,7 +26,6 @@ var reload      = browserSync.reload;
 // });
 // 
 
-
 //Jade task
 //
 
@@ -42,13 +41,13 @@ function log(error) {
     this.end();
 }
 
-gulp.task('jade', function() {
-	return gulp.src(['./app/_jadefiles/**/*.jade', '!./app/_jadefiles/**/_*.jade'])
-	.pipe(jade( {
-		pretty: true
-	}).on('error', log))
-	.pipe(gulp.dest('./app'));
-});
+// gulp.task('jade', function() {
+// 	return gulp.src(['./app/_jadefiles/**/*.jade', '!./app/_jadefiles/**/_*.jade'])
+// 	.pipe(jade( {
+// 		pretty: true
+// 	}).on('error', log))
+// 	.pipe(gulp.dest('./app'));
+// });
 
 
 //Sass compile
@@ -104,7 +103,7 @@ gulp.task('build', ['img'], function() {
 
 
 
-gulp.task('browserSync', ['sass', 'jade'], function() {
+gulp.task('browserSync', ['sass'], function() {
 	browserSync.init({
 		server: { baseDir: './app'},
 		notify: false,
@@ -117,9 +116,9 @@ gulp.task('browserSync', ['sass', 'jade'], function() {
 	});
 });
 
-gulp.task('jade-rebuild', ['pug'], function() {
-	browserSync.reload();
-});
+// gulp.task('jade-rebuild', ['pug'], function() {
+// 	browserSync.reload();
+// });
 
 gulp.task('html', function(){
   gulp.src('./app/index.html')
@@ -128,12 +127,12 @@ gulp.task('html', function(){
 
 gulp.task('watch', function() {
 	gulp.watch('./app/sass/**/*.+(scss|sass)', ['sass']);
-	gulp.watch('./app/_jadefiles/**/*.jade', ['jade']); 
+	// gulp.watch('./app/_jadefiles/**/*.jade', ['jade']); 
 	gulp.watch('./app/code/**/*.js', browserSync.reload);
 	 gulp.watch("./app/*.html").on('change', browserSync.reload);
 	// gulp.watch('./app/src/**/*.js', ['es6']);
 });
 
-gulp.task('default', ['browserSync','sass', 'jade', 'watch']);
+gulp.task('default', ['browserSync','sass','watch']);
 
 
