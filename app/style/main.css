@@ -290,8 +290,6 @@ input[type=text]:not(.browser-default):focus:not([readonly]).form-input-text {
   border-bottom: 2px solid grey; }
 
 .table--width {
-  position: relative;
-  right: 19px;
   width: 100%; }
 
 .table__row-2 {
@@ -315,6 +313,11 @@ input[type=text]:not(.browser-default):focus:not([readonly]).form-input-text {
 
 .table__row2-text {
   margin-right: 15%; }
+
+.table-section {
+  height: 500px;
+  overflow-y: scroll;
+  width: 100%; }
 
 .description {
   width: 100%;
