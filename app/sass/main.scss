@@ -203,6 +203,10 @@ input[type=text]:not(.browser-default):focus:not([readonly]).form-input-text {
 	width: 100%;
 }
 
+.table-select {
+	display: block;
+}
+
 
 //section description
 .description {

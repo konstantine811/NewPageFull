@@ -319,6 +319,9 @@ input[type=text]:not(.browser-default):focus:not([readonly]).form-input-text {
   overflow-y: scroll;
   width: 100%; }
 
+.table-select {
+  display: block; }
+
 .description {
   width: 100%;
   margin-top: 20px; }
