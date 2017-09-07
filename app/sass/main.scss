@@ -162,6 +162,7 @@ input[type=text]:not(.browser-default):focus:not([readonly]).form-input-text {
 
 		border-top: none;
 		border-bottom: 2px solid grey;
+		max-width: 273px;
 	}
 }
 
@@ -173,13 +174,9 @@ input[type=text]:not(.browser-default):focus:not([readonly]).form-input-text {
 
 	text-align: right;
 }
-.table__row-2,
-.table__row-3 {
-	width: 146px;
-}
+
 
 .table__row-4 {
-	width: 176px;
 
 	text-align: left;
 	p {
@@ -201,6 +198,7 @@ input[type=text]:not(.browser-default):focus:not([readonly]).form-input-text {
 	height: 500px;
 	overflow-y: scroll;
 	width: 100%;
+	overflow-x: hidden;
 }
 
 .table-select {

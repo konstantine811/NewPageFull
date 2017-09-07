@@ -287,7 +287,8 @@ input[type=text]:not(.browser-default):focus:not([readonly]).form-input-text {
 .table__inner td {
   vertical-align: baseline;
   border-top: none;
-  border-bottom: 2px solid grey; }
+  border-bottom: 2px solid grey;
+  max-width: 273px; }
 
 .table--width {
   width: 100%; }
@@ -296,12 +297,7 @@ input[type=text]:not(.browser-default):focus:not([readonly]).form-input-text {
   margin-right: 12px;
   text-align: right; }
 
-.table__row-2,
-.table__row-3 {
-  width: 146px; }
-
 .table__row-4 {
-  width: 176px;
   text-align: left; }
   .table__row-4 p {
     text-align: right; }
@@ -317,7 +313,8 @@ input[type=text]:not(.browser-default):focus:not([readonly]).form-input-text {
 .table-section {
   height: 500px;
   overflow-y: scroll;
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
 
 .table-select {
   display: block; }
