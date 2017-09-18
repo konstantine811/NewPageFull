@@ -15,26 +15,26 @@ nav, section {
 img {
   max-width: 100%; }
 
-.container::before, .container::after,
+.container-k::before, .container-k::after,
 .row::before, .row::after,
 .clear::before, .clear::after {
   content: " ";
   display: table; }
 
-.container::before, .container::after,
+.container-k::before, .container-k::after,
 .row::before, .row::after,
 .clear::after {
   clear: both; }
 
-.container {
+.container-k {
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px; }
-  .container .row {
+  .container-k .row {
     margin-left: -10px;
     margin-right: -10px; }
-    .container .row > [class*="col-"] {
+    .container-k .row > [class*="col-"] {
       position: relative;
       min-height: 1px;
       float: left;
