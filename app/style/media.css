@@ -1,25 +1,12 @@
 /*==========  Desktop First Method  ==========*/
 @media screen and (max-width: 1278px) {
-  .head-search__wrap-button {
-    display: block;
-    width: 230px;
-    float: none;
-    margin-bottom: 8px; }
   .head-text__inner {
     font-size: 3rem;
     position: relative;
     top: 10px; }
   .head-text__inner--sml {
     font-size: 36px;
-    top: 0; }
-  .description-content {
-    margin-left: 40px; }
-  .head-search__popup {
-    right: 5px; }
-  .head-search {
-    margin-top: 0; }
-  .head-search__text {
-    top: 78px; } }
+    top: 0; } }
 
 @media screen and (max-width: 1312px) {
   .head-search__text {
@@ -31,13 +18,22 @@
     top: 19px; }
   .head-text__inner--sml {
     font-size: 36px;
-    top: 0; } }
+    top: 0; }
+  .head-text--border {
+    position: relative;
+    top: 40px; }
+  .head-search__text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 0px; }
+  .head-search__wrap-button {
+    position: relative;
+    left: 0; } }
 
 @media screen and (max-width: 992px) {
   .description-content {
     margin-left: 0px; }
   .head-search__popup {
-    right: 8px;
     width: 225px; } }
 
 @media screen and (max-width: 784px) {
@@ -72,13 +68,17 @@
 @media screen and (max-width: 630px) {
   .head-search__wrap-button {
     margin-bottom: 0px;
-    bottom: 13px; } }
+    top: 16px; } }
 
 @media screen and (max-width: 575px) {
   .description-content {
     margin-left: 0px; }
   .head-text__inner--sml {
     font-size: 22px; } }
+
+@media screen and (max-width: 495px) {
+  .table-section {
+    overflow-x: visible; } }
 
 @media screen and (max-width: 480px) {
   .head-text--border:after {
@@ -93,6 +93,14 @@
   .head-text__inner--sml {
     font-size: 20px;
     top: 18px; } }
+
+@media screen and (max-width: 379px) {
+  .head-search__popup {
+    height: 0;
+    position: absolute;
+    top: 72px; }
+  .head-search__wrap-button {
+    width: 222px; } }
 
 @media screen and (max-width: 348px) {
   .head-text__inner--sml {
