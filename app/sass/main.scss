@@ -193,7 +193,7 @@ input[type=text]:not(.browser-default):focus:not([readonly]).form-input-text {
 }
 
 .table-section {
-	height: 500px;
+	max-height: 500px;
 	overflow-y: scroll;
 	width: 100%;
 	overflow-x: hidden;
@@ -312,4 +312,8 @@ input[type=text]:not(.browser-default):focus:not([readonly]).form-input-text {
 .description-nav--popup {
 	position: relative;
 	width: auto;
+}
+
+.button-back {
+	margin-top: 24px;
 }
