@@ -185,6 +185,7 @@ input[type=text]:not(.browser-default):focus:not([readonly]).form-input-text {
 .table-text {
 	font-size: 22px;
 	font-weight: 600;
+	line-height: 0%;
 
 	color: $blue-darken;
 }
@@ -316,4 +317,65 @@ input[type=text]:not(.browser-default):focus:not([readonly]).form-input-text {
 
 .button-back {
 	margin-top: 24px;
+}
+
+
+//index_5.html
+
+.table-header-img__inner {
+	width: 70px;
+	height: 70px;
+}
+
+.table-header__inner, .table-body__inner {
+	width: 10%;
+	padding: 5px 15px;
+}
+
+.border-none {
+	border-bottom: none;
+	max-height: min-content;
+}
+
+.table-body__inner--title {
+	width: 2%;
+}
+
+.table-body__inner--triangle {
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 10px;
+		left: 15px;
+		border-top: 6px solid transparent;
+		border-bottom: 6px solid transparent;
+
+		border-left: 12px solid black;
+	}
+}
+
+.btn-following {
+	background-color: transparent;
+	border: 2px $red-second solid;
+	&:hover {
+		background-color: $red-second;
+	}
+	&:hover  .red-text {
+		color: white !important;
+	}
+}
+.table-body-website__link {
+	color: black;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.table-body__inner--display-none{
+	display: none;
+	transition: all 0.5s ease-in-out;
 }

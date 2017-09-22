@@ -16,8 +16,8 @@
     "tests"
   ],
   "dependencies": {
+    "jquery-mousewheel": "^3.1.13"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "private": true
 }

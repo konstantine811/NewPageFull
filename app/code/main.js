@@ -38,4 +38,16 @@ $(document).ready(function() {
 
 	});
 
+    $('.table-body__inner--angular').on('mousewheel', function(e) {
+        var angular = $('.table-body__inner--angular');
+        var has_angular = angular.hasClass(":not('.table-body__inner--display-none')");
+        if(e.deltaY < 0) {
+        	$(this).addClass("table-body__inner--display-none").next('.table-body__inner--angular').removeClass("table-body__inner--display-none");
+		}
+        if(e.deltaY > 0) {
+            $(this).removeClass("table-body__inner--display-none").prev('.table-body__inner--angular').addClass("table-body__inner--display-none");
+        }
+
+    });
+
 });
